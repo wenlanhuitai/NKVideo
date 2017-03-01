@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20C5B2CFF4F481E48047C7DA /* libPods-HNLVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C09E0757FE55A0EC5C3CA8D /* libPods-HNLVideo.a */; };
 		E91B1D101E5C510800CF46E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D0F1E5C510800CF46E8 /* main.m */; };
 		E91B1D131E5C510800CF46E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D121E5C510800CF46E8 /* AppDelegate.m */; };
 		E91B1D161E5C510800CF46E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D151E5C510800CF46E8 /* ViewController.m */; };
@@ -36,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1961A39EC1AE50C388F1382F /* Pods-HNLVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNLVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HNLVideo/Pods-HNLVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		1C09E0757FE55A0EC5C3CA8D /* libPods-HNLVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNLVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		779CE7286A1C60189BD6960B /* Pods-HNLVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNLVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HNLVideo/Pods-HNLVideo.release.xcconfig"; sourceTree = "<group>"; };
+		E9149C691E651F4900953394 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E91B1D0B1E5C510800CF46E8 /* HNLVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNLVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B1D0F1E5C510800CF46E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E91B1D111E5C510800CF46E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C5B2CFF4F481E48047C7DA /* libPods-HNLVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		938F8F3594F975BFDBB45E8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1961A39EC1AE50C388F1382F /* Pods-HNLVideo.debug.xcconfig */,
+				779CE7286A1C60189BD6960B /* Pods-HNLVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEC4D85EF0BB80855DC65275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9149C691E651F4900953394 /* CoreData.framework */,
+				1C09E0757FE55A0EC5C3CA8D /* libPods-HNLVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E91B1D021E5C510800CF46E8 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +111,8 @@
 				E91B1D2A1E5C510800CF46E8 /* HNLVideoTests */,
 				E91B1D351E5C510800CF46E8 /* HNLVideoUITests */,
 				E91B1D0C1E5C510800CF46E8 /* Products */,
+				938F8F3594F975BFDBB45E8E /* Pods */,
+				AEC4D85EF0BB80855DC65275 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E91B1D3B1E5C510800CF46E8 /* Build configuration list for PBXNativeTarget "HNLVideo" */;
 			buildPhases = (
+				BC9EF2D00F8E1C11D13AC9B0 /* [CP] Check Pods Manifest.lock */,
 				E91B1D071E5C510800CF46E8 /* Sources */,
 				E91B1D081E5C510800CF46E8 /* Frameworks */,
 				E91B1D091E5C510800CF46E8 /* Resources */,
+				50C0A08D5E8623CAFDD0473F /* [CP] Embed Pods Frameworks */,
+				FCBAABEA71F49CD034C2B3EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +303,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50C0A08D5E8623CAFDD0473F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNLVideo/Pods-HNLVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9EF2D00F8E1C11D13AC9B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCBAABEA71F49CD034C2B3EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNLVideo/Pods-HNLVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E91B1D071E5C510800CF46E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -377,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -427,6 +504,7 @@
 		};
 		E91B1D3C1E5C510800CF46E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1961A39EC1AE50C388F1382F /* Pods-HNLVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94D4HDKNF7;
@@ -439,6 +517,7 @@
 		};
 		E91B1D3D1E5C510800CF46E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 779CE7286A1C60189BD6960B /* Pods-HNLVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94D4HDKNF7;
@@ -518,6 +597,7 @@
 				E91B1D3D1E5C510800CF46E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91B1D3E1E5C510800CF46E8 /* Build configuration list for PBXNativeTarget "HNLVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +606,7 @@
 				E91B1D401E5C510800CF46E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91B1D411E5C510800CF46E8 /* Build configuration list for PBXNativeTarget "HNLVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +615,7 @@
 				E91B1D431E5C510800CF46E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
