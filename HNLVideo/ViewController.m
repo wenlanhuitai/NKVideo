@@ -8,15 +8,27 @@
 
 #import "ViewController.h"
 #import <CoreData/CoreData.h>
+#import "HNLCoreDataManager.h"
 #import "Tutorial+CoreDataClass.h"
+#import "SMTeachingListViewController.h"
 @interface ViewController ()
-
+@property (nonatomic,strong) HNLCoreDataManager *coreDataManager;
+@property (nonatomic,strong) NSMutableArray *dataArray;
 @end
 
 @implementation ViewController
 
+- (NSMutableArray *)dataArray {
+    if (_dataArray == nil) {
+        _dataArray = [[NSMutableArray alloc] init];
+    }
+    return _dataArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.coreDataManager = [HNLCoreDataManager defaultCoreData];
+    
     // Do any additional setup after loading the view, typically from a nib.
     
     NSURL *modeUrl = [[NSBundle mainBundle] URLForResource:@"HNLVideo" withExtension:@"momd"];
@@ -43,7 +55,7 @@
     
     //创建数据管理上下文对象：数据库协调者类似一个协议类，绑定了数据模型，数据存储的位置，而真正实现数据库操作的是context对象！如 ：增，删，改，查。所以，context 需要持有持久化对象来操作数据
     NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-    
+    moc.persistentStoreCoordinator = psc;
     
     // 以上步骤是调动基础服务，接下来创建实际的数据对象NSEntityDescription,设置数据后，并存储到数据库
     // 数据对象与之前创建的数据模型有关，因为数据模型中存储了 我们需要的数据结构，所以我们可以通过实体名字（表名）
@@ -65,8 +77,36 @@
 
     NSLog(@"%@",[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES)lastObject] stringByAppendingPathComponent:@"HNL.sqlite"]);
     
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(200, 200, 100, 40)];
+    
+    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
+- (void) btnAction {
+    
+    
+}
+
+/***
+ * 数据存储
+ *
+ */
+-(void) save {
+    
+    // 这个时候只是通过Mmoc 把新建的 模型对象 Tutorial，临时放入内存（这是context和协调者的功劳）
+    
+    //任何表模型实体对象 都是继承自 ：NSManagedObject -- > Tutorial
+    Tutorial *tutor = [NSEntityDescription insertNewObjectForEntityForName:@"Tutorial" inManagedObjectContext:self.coreDataManager.managedObjectMainContext];
+    
+    tutor.title = @"titlesssss";
+    tutor.star = 30;
+    tutor.collect = 20;
+    tutor.comment = 4;
+    [self.coreDataManager saveData:self.dataArray withTableName:@"Tutorial"];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20C5B2CFF4F481E48047C7DA /* libPods-HNLVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C09E0757FE55A0EC5C3CA8D /* libPods-HNLVideo.a */; };
+		E9149CAE1E66BCDB00953394 /* HNLCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9149CAD1E66BCDB00953394 /* HNLCoreDataManager.m */; };
 		E91B1D101E5C510800CF46E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D0F1E5C510800CF46E8 /* main.m */; };
 		E91B1D131E5C510800CF46E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D121E5C510800CF46E8 /* AppDelegate.m */; };
 		E91B1D161E5C510800CF46E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D151E5C510800CF46E8 /* ViewController.m */; };
@@ -17,6 +18,12 @@
 		E91B1D211E5C510800CF46E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B1D1F1E5C510800CF46E8 /* LaunchScreen.storyboard */; };
 		E91B1D2C1E5C510800CF46E8 /* HNLVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D2B1E5C510800CF46E8 /* HNLVideoTests.m */; };
 		E91B1D371E5C510800CF46E8 /* HNLVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E91B1D361E5C510800CF46E8 /* HNLVideoUITests.m */; };
+		E9F84F271E6D0F0800A2BCA8 /* SMBasePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F84F261E6D0F0800A2BCA8 /* SMBasePlayViewController.m */; };
+		E9F84F2A1E6D0FF900A2BCA8 /* SMPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F84F291E6D0FF900A2BCA8 /* SMPlayViewController.m */; };
+		E9F84F2D1E6D335800A2BCA8 /* SMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F84F2C1E6D335800A2BCA8 /* SMBaseViewController.m */; };
+		E9F84F301E6D33BE00A2BCA8 /* SMBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F84F2F1E6D33BE00A2BCA8 /* SMBaseTableViewController.m */; };
+		E9F84F331E6D33F800A2BCA8 /* SMTeachingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F84F321E6D33F800A2BCA8 /* SMTeachingListViewController.m */; };
+		E9F84F491E6D392900A2BCA8 /* SMUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F84F481E6D392900A2BCA8 /* SMUICommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,8 @@
 		1C09E0757FE55A0EC5C3CA8D /* libPods-HNLVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNLVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		779CE7286A1C60189BD6960B /* Pods-HNLVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNLVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HNLVideo/Pods-HNLVideo.release.xcconfig"; sourceTree = "<group>"; };
 		E9149C691E651F4900953394 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E9149CAC1E66BCDB00953394 /* HNLCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNLCoreDataManager.h; sourceTree = "<group>"; };
+		E9149CAD1E66BCDB00953394 /* HNLCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNLCoreDataManager.m; sourceTree = "<group>"; };
 		E91B1D0B1E5C510800CF46E8 /* HNLVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNLVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B1D0F1E5C510800CF46E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E91B1D111E5C510800CF46E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +67,18 @@
 		E91B1D321E5C510800CF46E8 /* HNLVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HNLVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B1D361E5C510800CF46E8 /* HNLVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNLVideoUITests.m; sourceTree = "<group>"; };
 		E91B1D381E5C510800CF46E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F84F251E6D0F0800A2BCA8 /* SMBasePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBasePlayViewController.h; sourceTree = "<group>"; };
+		E9F84F261E6D0F0800A2BCA8 /* SMBasePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBasePlayViewController.m; sourceTree = "<group>"; };
+		E9F84F281E6D0FF900A2BCA8 /* SMPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPlayViewController.h; sourceTree = "<group>"; };
+		E9F84F291E6D0FF900A2BCA8 /* SMPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPlayViewController.m; sourceTree = "<group>"; };
+		E9F84F2B1E6D335800A2BCA8 /* SMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBaseViewController.h; sourceTree = "<group>"; };
+		E9F84F2C1E6D335800A2BCA8 /* SMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBaseViewController.m; sourceTree = "<group>"; };
+		E9F84F2E1E6D33BE00A2BCA8 /* SMBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBaseTableViewController.h; sourceTree = "<group>"; };
+		E9F84F2F1E6D33BE00A2BCA8 /* SMBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMBaseTableViewController.m; sourceTree = "<group>"; };
+		E9F84F311E6D33F800A2BCA8 /* SMTeachingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTeachingListViewController.h; sourceTree = "<group>"; };
+		E9F84F321E6D33F800A2BCA8 /* SMTeachingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTeachingListViewController.m; sourceTree = "<group>"; };
+		E9F84F471E6D392900A2BCA8 /* SMUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUICommon.h; sourceTree = "<group>"; };
+		E9F84F481E6D392900A2BCA8 /* SMUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMUICommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +125,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E9149C7A1E66B18400953394 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E91B1D1A1E5C510800CF46E8 /* HNLVideo.xcdatamodeld */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		E9149CAB1E66BCAF00953394 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				E9149CAC1E66BCDB00953394 /* HNLCoreDataManager.h */,
+				E9149CAD1E66BCDB00953394 /* HNLCoreDataManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 		E91B1D021E5C510800CF46E8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +167,10 @@
 		E91B1D0D1E5C510800CF46E8 /* HNLVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E9F84F461E6D391600A2BCA8 /* common */,
+				E9F84F1F1E6D07BB00A2BCA8 /* module */,
+				E9149CAB1E66BCAF00953394 /* manager */,
+				E9149C7A1E66B18400953394 /* data */,
 				E91B1D111E5C510800CF46E8 /* AppDelegate.h */,
 				E91B1D121E5C510800CF46E8 /* AppDelegate.m */,
 				E91B1D141E5C510800CF46E8 /* ViewController.h */,
@@ -137,7 +179,6 @@
 				E91B1D1D1E5C510800CF46E8 /* Assets.xcassets */,
 				E91B1D1F1E5C510800CF46E8 /* LaunchScreen.storyboard */,
 				E91B1D221E5C510800CF46E8 /* Info.plist */,
-				E91B1D1A1E5C510800CF46E8 /* HNLVideo.xcdatamodeld */,
 				E91B1D0E1E5C510800CF46E8 /* Supporting Files */,
 			);
 			path = HNLVideo;
@@ -167,6 +208,48 @@
 				E91B1D381E5C510800CF46E8 /* Info.plist */,
 			);
 			path = HNLVideoUITests;
+			sourceTree = "<group>";
+		};
+		E9F84F1F1E6D07BB00A2BCA8 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				E9F84F241E6D0EE100A2BCA8 /* play */,
+				E9F84F201E6D07BB00A2BCA8 /* indexList */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		E9F84F201E6D07BB00A2BCA8 /* indexList */ = {
+			isa = PBXGroup;
+			children = (
+				E9F84F281E6D0FF900A2BCA8 /* SMPlayViewController.h */,
+				E9F84F291E6D0FF900A2BCA8 /* SMPlayViewController.m */,
+				E9F84F2B1E6D335800A2BCA8 /* SMBaseViewController.h */,
+				E9F84F2C1E6D335800A2BCA8 /* SMBaseViewController.m */,
+				E9F84F2E1E6D33BE00A2BCA8 /* SMBaseTableViewController.h */,
+				E9F84F2F1E6D33BE00A2BCA8 /* SMBaseTableViewController.m */,
+				E9F84F311E6D33F800A2BCA8 /* SMTeachingListViewController.h */,
+				E9F84F321E6D33F800A2BCA8 /* SMTeachingListViewController.m */,
+			);
+			path = indexList;
+			sourceTree = "<group>";
+		};
+		E9F84F241E6D0EE100A2BCA8 /* play */ = {
+			isa = PBXGroup;
+			children = (
+				E9F84F251E6D0F0800A2BCA8 /* SMBasePlayViewController.h */,
+				E9F84F261E6D0F0800A2BCA8 /* SMBasePlayViewController.m */,
+			);
+			path = play;
+			sourceTree = "<group>";
+		};
+		E9F84F461E6D391600A2BCA8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E9F84F471E6D392900A2BCA8 /* SMUICommon.h */,
+				E9F84F481E6D392900A2BCA8 /* SMUICommon.m */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,10 +439,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F84F271E6D0F0800A2BCA8 /* SMBasePlayViewController.m in Sources */,
 				E91B1D161E5C510800CF46E8 /* ViewController.m in Sources */,
+				E9F84F301E6D33BE00A2BCA8 /* SMBaseTableViewController.m in Sources */,
+				E9149CAE1E66BCDB00953394 /* HNLCoreDataManager.m in Sources */,
+				E9F84F2D1E6D335800A2BCA8 /* SMBaseViewController.m in Sources */,
 				E91B1D131E5C510800CF46E8 /* AppDelegate.m in Sources */,
+				E9F84F2A1E6D0FF900A2BCA8 /* SMPlayViewController.m in Sources */,
 				E91B1D1C1E5C510800CF46E8 /* HNLVideo.xcdatamodeld in Sources */,
 				E91B1D101E5C510800CF46E8 /* main.m in Sources */,
+				E9F84F331E6D33F800A2BCA8 /* SMTeachingListViewController.m in Sources */,
+				E9F84F491E6D392900A2BCA8 /* SMUICommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +529,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -454,9 +544,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -487,15 +578,16 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -510,6 +602,32 @@
 				DEVELOPMENT_TEAM = 94D4HDKNF7;
 				INFOPLIST_FILE = HNLVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MMRecord\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"ZFPlayer\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hunvlang.com.HNLVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -523,6 +641,32 @@
 				DEVELOPMENT_TEAM = 94D4HDKNF7;
 				INFOPLIST_FILE = HNLVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MMRecord\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"ZFPlayer\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hunvlang.com.HNLVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -626,7 +770,8 @@
 				E91B1D1B1E5C510800CF46E8 /* HNLVideo.xcdatamodel */,
 			);
 			currentVersion = E91B1D1B1E5C510800CF46E8 /* HNLVideo.xcdatamodel */;
-			path = HNLVideo.xcdatamodeld;
+			name = HNLVideo.xcdatamodeld;
+			path = ../HNLVideo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
